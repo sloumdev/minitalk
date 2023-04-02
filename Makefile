@@ -1,61 +1,43 @@
-NAMEC = client
-NAMES = server
-BONUS_NAMEC = client_bonus
-BONUS_NAMES = server_bonus
-PRINTF = libftprintf.a
-SRCC_FILES =	client.c
-SRCS_FILES =	server.c
-BONUSC_FILES = client_bonus.c 
-BONUSS_FILES = server_bonus.c
-SRC_DIR = src/
-SRCC = $(addprefix $(SRC_DIR), $(SRCC_FILES))
-SRCS = $(addprefix $(SRC_DIR), $(SRCS_FILES))
-BONUSC = $(addprefix $(SRC_DIR), $(BONUSC_FILES))
-BONUSS = $(addprefix $(SRC_DIR), $(BONUSS_FILES))
-OBJC = ${SRCC:.c=.o}
-OBJS = ${SRCS:.c=.o}
-OBJBC = ${BONUSC:.c=.o}
-OBJBS = ${BONUSS:.c=.o}
-CC			= cc
-CFLAGS		= -Wall -Werror -Wextra
-INCLUDE = -I include
-RM = rm -rf
+LIBFT	= includes/libft
+PRINTF	= includes/ft_printf
+LIBA	= libft.a
+PRIA	= libftprintf.a
 
-all:	$(NAMEC) $(NAMES)
+CC		= cc
+CFLAGS	= -Wall -Wextra -Werror
+RM		= rm -f
 
-$(NAMEC) : $(OBJC)
-		@make -C printf
-		$(CC) $(CFLAGS) $(OBJC) $(INCLUDE) printf/$(PRINTF) -o $(NAMEC)
+SRCS	=	./src/server.c
+SRCC	=	./src/client.c
+SRCSB	=	./src/bonusserver.c
+SRCCB	=	./src/bonusclient.c
 
-$(NAMES) : $(OBJS)
-		@make -C printf
-		$(CC) $(CFLAGS) $(OBJS) $(INCLUDE) printf/$(PRINTF) -o $(NAMES)
+all: sc clean
 
-bonus : $(BONUS_NAMEC) $(BONUS_NAMES)
+sc: printf libft
+		$(CC) $(CFLAGS) $(SRCS) $(PRIA) -o server
+		$(CC) $(CFLAGS) $(SRCC) $(LIBA) $(PRIA) -o client
 
-$(BONUS_NAMEC) : $(OBJBC)
-				@make -C printf
-				$(CC) $(CFLAGS) $(OBJBC)  $(INCLUDE)  printf/$(PRINTF) -o $(BONUS_NAMEC)
+bonus: printf libft
+		$(CC) $(CFLAGS) $(SRCSB) $(PRIA) -o server
+		$(CC) $(CFLAGS) $(SRCCB) $(LIBA) $(PRIA) -o client
+		$(RM) libft.a libftprintf.a
+libft:
+		@make -C $(LIBFT)
+		@cp $(LIBFT)/$(LIBA) .
+printf:
+		@make -C $(PRINTF)
+		@cp $(PRINTF)/$(PRIA) .
 
-$(BONUS_NAMES) : $(OBJBS)
-				@make -C printf
-				$(CC) $(CFLAGS) $(OBJBS)  $(INCLUDE)  printf/$(PRINTF) -o $(BONUS_NAMES)
+clean:
+		$(RM) libft.a libftprintf.a
+		make -C $(LIBFT) clean
+		make -C $(PRINTF) clean
+fclean: clean
+		make -C $(LIBFT) fclean
+		make -C $(PRINTF) fclean
+finish: fclean
+		$(RM) server client
 
-clean :
-		@make clean -C printf
-		${RM} ${OBJC}
-		${RM} ${OBJS}
-		${RM} ${OBJBC}
-		${RM} ${OBJBS}
-
-fclean : clean
-		@make fclean -C printf
-		${RM} $(NAMEC)
-		${RM} $(NAMES)
-		${RM} $(BONUS_NAMEC)
-		${RM} $(BONUS_NAMES)
-		${RM} $(PRINTF)
-
-re : fclean all
-
-.PHONY:		all bonus clean fclean re
+re: fclean all
+reall: finish all

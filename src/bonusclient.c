@@ -1,6 +1,6 @@
-#include "../includes/minitalk.h"
+#include "../includes/minitalk_bonus.h"
 
-void	ft_signal(char xar, int pid)
+void	xartosignal(char xar, int pid)
 {
 	int	bit;
 
@@ -16,6 +16,15 @@ void	ft_signal(char xar, int pid)
 	}
 }
 
+static void	handler(int signum)
+{
+	if (signum == SIGUSR1)
+	{
+		ft_printf("%s", "Message recived!\n");
+		exit(0);
+	}
+}
+
 int	main(int argc, char **argv)
 {
 	int		i;
@@ -27,14 +36,16 @@ int	main(int argc, char **argv)
 		ft_printf("Client must have a PID and a msg!\n");
 		return (0);
 	}
+	signal(SIGUSR1, handler);
 	pid = ft_atoi(*(argv + 1));
 	str = *(argv + 2);
-	ft_printf("Mandatory Client:  PID: %d, MSG: %s\n", pid, str);
+	ft_printf("Bonus Client:  PID: %d, MSG: %s\n", pid, str);
 	i = 0;
 	while (*(str + i))
 	{
-		ft_signal(*(str + i), pid);
+		xartosignal(*(str + i), pid);
 		i++;
 	}
+	xartosignal('\0', pid);
 	return (0);
 }

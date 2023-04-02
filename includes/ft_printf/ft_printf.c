@@ -65,11 +65,11 @@ int	ft_printf(const char *str, ...)
 	return (print_len);
 }
 
-int main()
+/* int main()
 {
 	ft_printf("this is an int %0d\n", 0); 
 	printf("this is an int %0d", 0);
 
 
     return 0;
-}
+} */

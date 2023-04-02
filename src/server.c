@@ -1,18 +1,18 @@
-#include "../include/minitalk.h"
+#include "../includes/minitalk.h"
 
-void	ft_btoa(int sig)
+void	handler(int signalnum)
 {
-	static int	bit;
-	static int	i;
+	static int	pos;
+	static char	xar;
 
-	if (sig == SIGUSR1)
-		i |= (0x01 << bit);
-	bit++;
-	if (bit == 8)
+	if (signalnum == SIGUSR1)
+		xar |= (0b1 << pos);
+	pos++;
+	if (pos == 8)
 	{
-		ft_printf("%c", i);
-		bit = 0;
-		i = 0;
+		ft_printf("%c", xar);
+		pos = 0;
+		xar = 0;
 	}
 }
 
@@ -21,18 +21,18 @@ int	main(int argc, char **argv)
 	int	pid;
 
 	(void)argv;
-	if (argc != 1)
+	if (argc > 1)
 	{
-		ft_printf("Error\n");
-		return (1);
+		ft_printf("Server can not handle argvs");
+		return (0);
 	}
 	pid = getpid();
-	ft_printf("%d\n", pid);
-	while (argc == 1)
+	ft_printf("Mandatory Server is running - PID: %d\n", pid);
+	signal(SIGUSR1, handler);
+	signal(SIGUSR2, handler);
+	while (1)
 	{
-		signal(SIGUSR1, ft_btoa);
-		signal(SIGUSR2, ft_btoa);
-		pause ();
+		pause();
 	}
 	return (0);
 }
