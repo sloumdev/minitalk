@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:50:56 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:51:06 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:12:58 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}	
 }
-
-/* nt		main()
-{
-	ft_putstr_fd("Texto Aqui!!", 1);
-	return(0);
-} */

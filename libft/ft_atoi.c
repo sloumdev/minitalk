@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:45:13 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:54:40 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:09:29 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,3 @@ int	ft_atoi(char *str)
 	}
 	return (res * s);
 }
-/*
-int main(void)
-{
-	char str[] = "   -1234af555";
-	printf("%d\n", ft_atoi(str));
-}*/

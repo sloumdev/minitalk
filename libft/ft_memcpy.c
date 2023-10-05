@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:48:55 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:48:58 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:10:29 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,18 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int		main()
-{
-	char dest1[] = "Roberto Leal esta vivo no nosso espirito.";
-	char src[] = "Não sei se ele ainda canta.";
-	char dest2[] = "Roberto Leal esta vivo no nosso espirito.";
-
-	printf("\n%s \n", dest1);
-	memcpy(dest1, src, 50);
-	printf("%s\n", dest1);
-
-	printf("\n%s \n", dest2);
-	ft_memcpy(dest2, src, 50);
-	printf("%s\n", dest2);
-}*/

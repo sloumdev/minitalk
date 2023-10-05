@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:53:22 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:53:26 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:12:18 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,3 @@ int	ft_toupper(int ch)
 		return (ch - 32);
 	return (ch);
 }
-/*
-int main(void) 
-{
-	char c;
-
-	c = 'm';
-	printf("%c -> %c", c, ft_toupper(c));
-
-	c = 'D';
-	printf("\n%c -> %c", c, ft_toupper(c));
-
-	c = '9';
-	printf("\n%c -> %c", c, ft_toupper(c));
-	return (0);
-}*/

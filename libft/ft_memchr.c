@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:48:34 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:48:36 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:10:18 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '/';
-   char *ret;
-
-   ret = ft_memchr(str, ch, 6);
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-
-   return(0);
-}*/

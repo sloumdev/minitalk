@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:49:15 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:49:18 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:10:39 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,18 +26,3 @@ void	*ft_memset(void *ptr, int c, size_t n)
 	}
 	return (ptr);
 }
-/*
-int		main()
-{
-	char a[] = "Esta frase não tem nada cá dentro.";
-	char b[] = "Esta frase não tem nada cá dentro.";
-	char c = 's';
-
-	printf("\n%s \n", a);
-	memset(a + 5, c, 2);
-	printf("%s\n", a);
-
-	printf("\n%s \n", b);
-	ft_memset(b + 5, c, 2);
-	printf("%s\n", b);
-}*/

@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:53:31 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:53:34 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:12:24 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,17 +50,3 @@ char	*get_next_line(int fd)
 	s[fd] = ft_new_line(s[fd]);
 	return (line);
 }
-
-/* int main()
-{
-	int fd = open("a.txt", OPEN_MAX);
-    int fd2 = open("b.txt", OPEN_MAX);
-    int fd3 = open("c.txt", OPEN_MAX);
-
-	printf("%s", get_next_line(fd));
-	printf("%s", get_next_line(fd2));
-	printf("%s", get_next_line(fd3));
-	printf("%s", get_next_line(fd));
-
-	return 0;
-}  */ 

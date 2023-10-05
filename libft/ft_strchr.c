@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:51:13 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:51:16 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:13:49 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return ((char *)str + i);
 }
-/*
-int main(void)
-{
-	char str[] = "marcela";
-	char c = 'c';
-
-	printf("%s\n", ft_strchr2(str, c));
-}*/

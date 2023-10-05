@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:51:48 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:51:51 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:14:16 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new_str[i] = '\0';
 	return (new_str);
 }
-
-/* int		main()
-{
-	char *str1 = "tiago";
-	char *str2 = "santos";
-	char *str3;
-
-	printf("%s\n%s\n", str1, str2);
-
-	str3 = ft_strjoin(str1, str2);
-
-	printf("%s\n", str3);
-	return (0);
-} */

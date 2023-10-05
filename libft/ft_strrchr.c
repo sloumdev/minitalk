@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:52:50 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:52:52 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:13:20 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,3 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-/*
-int		main()
-{
-	char a[] = "Olua, quem faula?";
-	char b = 'u';
-
-	char c[] = "Olua, quem faula?";
-	char d = 'u';
-
-	printf("%s\n", strrchr(a, b));
-
-	printf("\n%s\n", ft_strrchr(c, d));
-
-	return (0);
-}*/

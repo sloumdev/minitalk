@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:52:09 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:52:12 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:11:36 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	dest[i] = '\0';
 	return (len);
 }
-/*
-int main(void)
-{
-	char src[] = "Hello";
-	char dest[10];
-
-	printf("%ld\n", ft_strlcpy(dest, src, 0));
-	printf("%s\n", dest);
-}*/

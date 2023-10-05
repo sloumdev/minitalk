@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:52:58 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:53:01 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:12:06 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,14 +56,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strncpy(new_str, (s1 + beg), end);
 	return (new_str);
 }
-
-/* int		main()
-{
-	char *str = "aaajuninhoaaa";
-	char *tirar = "aaa";
-	char *here;
-
-	here = ft_strtrim(str, tirar);
-	printf("%s\n", str);
-	printf("%s\n", here);
-} */

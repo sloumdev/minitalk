@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:49:05 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:56:04 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:10:34 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,21 +28,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(dest, src, n);
 	return (dest);
 }
-
-/*
-int		main()
-{
-	char src[] = "aaaaa";
-	char dest1[] = "bbbbb";
-
-	char src2[] = "12345";
-	char dest2[] = "67890";
-
-	printf("\n%s \n", dest1);
-	memmove(dest1, src, 5);
-	printf("%s\n", dest1);
-
-	printf("\n%s \n", dest2);
-	ft_memmove(dest2, src2, 5);
-	printf("%s\n", dest2);
-}*/

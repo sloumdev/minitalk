@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:51:57 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:52:01 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:11:30 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 	dest[j] = '\0';
 	return (len_dest + len_src);
 }
-/*
-int main(void)
-{
-	char src[] = "plays";
-	char dest[16] = "juninho ";
-
-	printf("%ld\n", ft_strlcat(dest, src, 16));
-	printf("%s\n", dest);
-}*/

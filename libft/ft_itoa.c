@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:46:40 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:55:02 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:09:57 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,36 +56,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/* 
-int		main(void)
-{
-	int number1 = 123456789;
-	int number2 = 1;
-	int number3 = 0;
-	int number4 = 0001342;
-	int number5 = 42;
-	int number6 = 422;
-
-	int number7 = -123456789;
-	int number8 = -1;
-	int number9 = -0;
-	int number10 = -00101;
-	int number11 = -42;
-	int number12 = -422;
-
-	ft_itoa(number1);
-	printf("%s\n", ft_itoa(number2));
-	printf("%s\n", ft_itoa(number3));
-	ft_itoa(number4);
-	printf("%s\n", ft_itoa(number5));
-	ft_itoa(number6);
-	ft_itoa(number7);
-	ft_itoa(number8);
-	ft_itoa(number9);
-	ft_itoa(number10);
-	ft_itoa(number11);
-	ft_itoa(number12);
-
-	return (0);
-} */

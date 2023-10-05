@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:51:27 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:51:30 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:11:17 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,19 +29,3 @@ char	*ft_strdup(const char *s)
 	s2[i] = '\0';
 	return (s2);
 }
-
-/* int main()
-{
-	char a[] = "Teste";
-	char *b;
-
-	char c[] = "Teste";
-	char *d;
-
-	b = strdup(a);
-	d = ft_strdup(c);
-
-	printf("%s \n", b);
-	printf("%s \n", d);
-}
- */

@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:48:43 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:48:46 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:10:23 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,3 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 		i++;
 	return (conv_s1[i] - conv_s2[i]);
 }
-/*
-int		main()
-{
-   char str1[] = "aaa";
-   char str2[] = "AAA";
-
-   printf("%d \n", memcmp(str1, str2, 3));
-   printf("%d \n", ft_memcmp(str1, str2, 3));
-
-   return (0);
-}*/

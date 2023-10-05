@@ -6,7 +6,7 @@
 /*   By: abimkhio <abimkhio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:52:35 by abimkhio          #+#    #+#             */
-/*   Updated: 2023/10/05 15:52:39 by abimkhio         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:11:52 by abimkhio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,39 +29,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
-/*
-int		main()
-{
-	char str1[] = "asdsa";
-	char str2[] = "asdsaa";
-
-	printf("\n%d \n",strncmp(str1, str2, 20));
-	printf("%d \n",ft_strncmp(str1, str2, 20));
-
-	printf("\n%d \n",strncmp(str1, str2, 21));
-	printf("%d \n",ft_strncmp(str1, str2, 21));
-
-	printf("\n%d \n",strncmp(str1, str2, 25));
-	printf("%d \n",ft_strncmp(str1, str2, 25));
-
-	printf("\n%d \n",strncmp(str1, str2, 19));
-	printf("%d \n",ft_strncmp(str1, str2, 19));
-
-	printf("\n%d \n",strncmp(str1, str2, 1));
-	printf("%d \n",ft_strncmp(str1, str2, 1));
-
-	printf("\n%d \n",strncmp(str1, str2, 0));
-	printf("%d \n",ft_strncmp(str1, str2, 0));
-
-	printf("\n%d \n",strncmp(str1, str2, 3));
-	printf("%d \n",ft_strncmp(str1, str2, 3));
-
-	printf("\n%d \n",strncmp(str1, str2, 2));
-	printf("%d \n",ft_strncmp(str1, str2, 2));
-
-	printf("\n%d \n",ft_strncmp(str1, str2, -1));
-	printf("%d \n",ft_strncmp(str1, str2, -10));
-
-	return(0);
-}
-*/
